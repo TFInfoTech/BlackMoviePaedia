@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "card":"../component/card/card"
+  },
+  "navigationBarTitleText": "黑白电影百科"
+}

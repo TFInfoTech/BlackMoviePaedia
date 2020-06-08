@@ -1,35 +1,18 @@
-// pages/blackMovieIndex/blackMovieIndex.js
+// pages/blackMovieStarList/blackMovieStarList.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    imgSrc: [],
-    PageCur: 'blackMovieIndex'
+
   },
-  GetMoviePic: function(){
-    var that = this//不要漏了这句，很重要
-    wx.request({
-      url: 'https://data1.library.sh.cn/shnh/dydata/webapi/movie/getHomeFilmBillList?key=c593975e77917bcb4c0f0df95792c4681c0e17a8',
-      method:'GET',
-      success: function (res) {
-        console.log(res.data)
-        let listimgeurl=[];
-        for(var i=0;i<res.data.data.length;i++){
-          listimgeurl.push(res.data.data[i].imgPath)
-        }
-         that.setData({   
-           imgSrc:listimgeurl   
-         })
-      }
-    })
-  },
+
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    this.GetMoviePic();
+
   },
 
   /**

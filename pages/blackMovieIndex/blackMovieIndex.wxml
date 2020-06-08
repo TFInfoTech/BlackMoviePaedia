@@ -1,3 +1,11 @@
-<swiper autoplay="true" indicator-dots="true" indicator-active-color="#fff" class="news-banner">
-  <swiper-item wx:for="{{imgSrc}}" wx:key="index"><image src="{{item}}"></image></swiper-item>
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{imgSrc}}" wx:key>
+    <image src="{{item}}" ></image>
+  </swiper-item>
 </swiper>
+<view class="cu-bar search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="请输入想要搜索的电影信息..." confirm-type="search" bindinput='onSearch'></input>
+    </view>
+  </view>

@@ -1,1 +1,12 @@
-/* pages/blackMovieIndex/blackMovieIndex.wxss */
+page{
+  background-color: #eee;
+}
+.search-movie-container{
+  padding: 20rpx 30rpx 0rpx;
+}
+.search-movie-container input{
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}

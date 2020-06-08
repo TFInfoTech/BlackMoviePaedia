@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/blackMovieIndex/blackMovieIndex",
+    "pages/blackMovieList/blackMovieList",
+    "pages/blackMovieStarList/blackMovieStarList",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -9,6 +11,41 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4990E2",
+    "backgroundColor": "#f1f1f1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index_active.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/blackMovieIndex/blackMovieIndex",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/index_active.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/blackMovieList/blackMovieList",
+        "text": "影视长廊"
+      },
+      {
+        "selectedIconPath": "images/index_active.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/blackMovieStarList/blackMovieStarList",
+        "text": "影视明星"
+      },
+      {
+        "selectedIconPath": "images/index_active.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/blackMovieStarList/blackMovieStarList",
+        "text": "影海拾贝"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

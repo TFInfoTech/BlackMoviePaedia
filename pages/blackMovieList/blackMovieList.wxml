@@ -1,0 +1,3 @@
+ <view wx:for="{{filmllist}}">
+    <card videourl="{{item.videourl}}" videotitle="{{item.videotitle}}" filmtitle="{{item.filmtitle}}" filmdate="{{item.filmdate}}"></card>
+  </view>
