@@ -1,0 +1,3 @@
+<swiper autoplay="true" indicator-dots="true" indicator-active-color="#fff" class="news-banner">
+  <swiper-item wx:for="{{imgSrc}}" wx:key="index"><image src="{{item}}"></image></swiper-item>
+</swiper>

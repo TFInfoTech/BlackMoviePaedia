@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/blackMovieIndex/blackMovieIndex",
     "pages/index/index",
     "pages/logs/logs"
   ],
